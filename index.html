@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task By CMS</title>
+</head>
+
+<body class="body">
+    <header class="header-container header-text">YAY! It's BOGO</header>
+    <main class="main-content">
+        <label id="sectionUnit_one" class="side_1" for="unit_one">
+            <div class="sectionUnit">
+                <div style="display: flex;">
+                    <input checked class="input_1" id="unit_one" name="quantity" type="radio" value="1"
+                        onchange="onSelectOption('1',10)" />
+                    <div class="sub_side_1">
+                        <p class="unit_text">1 Unit <span class="Offer_disc"> 10% Off</span></p>
+                        <span class="price_type">Standard Price</span>
+                    </div>
+                </div>
+                <div class="side_2">
+                    <span class="offer_price">$ 10.00 USD</span>
+                    <span class="original_price">$ 24.00 USD</span>
+                </div>
+            </div>
+
+            <div id="lower_section_one" class="lower_section">
+                <div class="desc_product">
+                    <span style="text-align: left; margin-right: 46px; font-size: 15px">Size </span>
+                    <span style="text-align: left; font-size: 15px">Color </span>
+                </div>
+                <div id="unit_content_one"></div>
+            </div>
+        </label>
+        <label class="sub_session_2" for="unit_two">
+            <p class="most-popular">Most Popular</p>
+            <session id="sectionUnit_two" class="side_1">
+                <div class="sectionUnit">
+                    <div style="display: flex; ">
+                        <input class="input_1" id="unit_two" name="quantity" type="radio" value="2"
+                            onchange="onSelectOption('2',18)" />
+                        <p class="unit_text">2 Unit <span class="Offer_disc"> 20% Off</span></p>
+                    </div>
+                    <div class="side_2">
+                        <span class="offer_price">$ 18.00 USD</span>
+                        <span class="original_price">$ 24.00 USD</span>
+                    </div>
+                </div>
+                <div id="lower_section_two" class="lower_section">
+                    <div class="desc_product">
+                        <span style="text-align: left; margin-right: 46px; font-size: 15px">Size </span>
+                        <span style="text-align: left; font-size: 15px">Color </span>
+                    </div>
+                    <div id="unit_content_two"></div>
+                </div>
+            </session>
+        </label>
+        <label id="sectionUnit_three" class="side_1" for="unit_three">
+            <div class=" sectionUnit">
+                <div style="display: flex; position: relative;">
+                    <input class="input_1" id="unit_three" name="quantity" type="radio" value="3"
+                        onchange="onSelectOption('3',24)" />
+                    <p class="unit_text">3 Unit <span class="Offer_disc"> 30% Off</span></p>
+                </div>
+                <div class="side_2">
+                    <span class="offer_price">$ 24.00 USD</span>
+                    <span class="original_price">$ 24.00 USD</span>
+                </div>
+            </div>
+            <div id="lower_section_three" class="lower_section">
+                <div class="desc_product">
+                    <span style="text-align: left; margin-right: 46px; font-size: 15px">Size </span>
+                    <span style="text-align: left; font-size: 15px">Color </span>
+                </div>
+                <div id="unit_content_three"></div>
+            </div>
+        </label>
+        <session class="session_1">
+            <p class="delivery_text">
+                Free Delivery
+            </p>
+            <p class="total_price">
+                Total : <strong id="totalPrice">$18.00 USD</strong>
+            </p>
+        </session>
+
+        <button class="Add_btn" type="button">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.99998 3.33334V12.6667M3.33331 8.00001H12.6666" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            Add to Cart
+        </button>
+
+
+
+    </main>
+
+
+    <footer class="footer">
+        @ Powered by Pumper
+    </footer>
+
+
+
+    <script src="options.js"></script>
+</body>
+
+</html>
